@@ -4,6 +4,8 @@
 	<!--Required Meta Data-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta charset="utf-8">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<!--Stylesheets and icons-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Website title-->
@@ -23,34 +25,77 @@
 		<!--Main Content Container-->
 		<main class="maincontainer">
 			<!--First Panel container (Hero Image and CTA)-->
-			<div class="firstcontainer">
-				<div class="textcontainer">
-					<div class="textcontents">
-						<h1>Learn different methods to create navigation bars using HTML and CSS</h1>
-						<a href="icon.html">Start Learning</a>
+			<div class="backgroundcontainer">
+				<div class="contents">
+					<div class="textcontainer">
+						<div class="textcontents">
+							<h1>A new product that will change the way your team works. Increasing productivity and revenue.</h1>
+						</div>
 					</div>
-				</div>
-				<div class="imagecontainer">
-					<!--Image from Undraw-->
-					<img src="images/content.svg" alt="Image of web components">
+					<div class="formcontainer">
+						<form action="" method="post" class="card bg-light">
+							<h3> Get in contact! </h3>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label>Name</label>
+									<input type="text" class="form-control" id="name" placeholder="First name" maxlength="25" required>
+								</div>
+								<div class="form-group col-md-6">
+									<label>Last Name</label>
+									<input type="text" class="form-control" id="lastname" placeholder="Last name" maxlength="25" required>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label>Gender</label>
+									<select id="gender" class="form-control" required>
+										<option value="" selected>Select an option</option>
+										<option value="Female">Female</option>
+										<option value="Male">Male</option>
+										<option value="Other">Other</option>
+										<option value="Prefer not to say">Prefer not to say</option>
+									</select>
+								</div>
+								<div class="form-group col-md-6">
+									<label>Age</label>
+									<input type="number" class="form-control" id="age" min="18" max="100" placeholder="Age" required>
+								</div>
+							</div>
+								<div class="form-group">
+									<label>Email</label>
+									<input type="email" class="form-control" id="email" placeholder="name@example.com" maxlength="50" required>
+								</div>
+								<div class="form-group">
+									<label>Website</label>
+									<input type="text" class="form-control" id="website" placeholder="www.example.com" maxlength="50" required>
+								</div>
+								<div class="form-group">
+									<label>Leave your comment</label>
+									<textarea class="form-control" id="comment" rows="3" maxlength="255" required></textarea>
+								</div>
+							<div class="btn-group-toggle" data-toggle="buttons">
+								<button type="submit" class="btn btn-primary float-right">Submit</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 			<!--Second Panel container (Options cards)-->
 			<div class="optionscontainer">
 				<div class="cardscontainer">
-					<div class="card">
+					<div class="cardoptions">
 						<div>
 							<h2>Benefit 1</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit lorem urna, sit amet dignissim nisl molestie a.</p>
 						</div>
 					</div>
-					<div class="card">
+					<div class="cardoptions">
 						<div>
 							<h2>Benefit 2</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit lorem urna, sit amet dignissim nisl molestie a.</p>
 						</div>
 					</div>
-					<div class="card">
+					<div class="cardoptions">
 						<div>
 							<h2>Benefit 3</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit lorem urna, sit amet dignissim nisl molestie a.</p>
@@ -58,8 +103,15 @@
 					</div>
 				</div>
 			</div>
+			<!--Third Panel container (Call to action)-->
 			<div class="ctacontainer">
-
+				<div class="ctacontents">
+					<div class="ctacard">
+						<h1> Purchase now and get a discount!</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit lorem urna, sit amet dignissim nisl molestie a. Vestibulum tempus in mi ut vulputate. Etiam ut dui in orci molestie efficitur. Vestibulum eros risus, mattis volutpat consequat sit amet, molestie nec justo. Integer eget eleifend sem. Quisque lorem ante, dignissim a blandit eget, feugiat quis nisl. Ut placerat id est id scelerisque. Praesent feugiat faucibus justo, eu mattis libero consequat ut. Praesent eget congue dolor, sed iaculis nulla.</p>
+						<button class="btn btn-lg btn-primary">Sign up!</button>
+					</div>
+				</div>
 			</div>
 		</main>
 		<!--Footer-->
