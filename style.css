@@ -1,0 +1,222 @@
+/*-----Global styles-----*/
+html,
+body{
+	margin: 0px;
+	font-family: roboto, helvetica, arial;
+	overflow-x: hidden;
+	height:100%;
+}
+
+.bodycontainer{
+	display:flex;
+	flex-direction:column;
+	background: white;
+}
+
+/*-----Navigation Bar styles-----*/
+.navcontainer{
+	background:#2c2f33;
+	text-align: center;
+	display: block;
+}
+.topnav{
+	width:40%;
+}
+
+.brandnav{
+	padding:.7em .2em .2em .2em;
+	color: white;
+	font-weight: bold;
+	justify-content: center;
+	text-align: center;
+
+}
+/*-----Main Content styles-----*/
+.maincontainer{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*-----First Panel Container styles-----*/
+.backgroundcontainer{
+	background: url(../images/cover.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.contents{
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	padding: 4.5em 8em 4.5em 8em;
+	display:flex;
+	flex-direction:row;
+
+}
+.formcontainer{
+	display:block;
+}
+
+.card{
+	width: 90%;
+	border-radius: 15px;
+	padding: 1.5em;
+}
+
+.textcontainer{
+	display:block;
+	width: 40%;
+	padding:1em;
+	margin:1em;
+	color: white;
+}
+
+.textcontents{
+	width:100% ;
+}
+
+/*-----Second Panel Container styles-----*/
+.optionscontainer{
+	background-color: #f1e7c5;
+	width: 100%;
+}
+.cardscontainer{
+	padding: 6em 8em 6em 8em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+}
+.cardoptions{
+	background:white;
+	margin:1em;
+	padding: 2em;
+	color:black;
+	border-radius: 15px;
+	width:20%;
+}
+
+/*----Third Panel Container styles----*/
+.ctacontainer{
+	background: url(../images/secondcover.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.ctacontents{
+	padding: 8em 8em 8em 8em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.ctacard{
+	background:white;
+	margin:1em;
+	padding: 4em;
+	color:black;
+	border-radius: 15px;
+	width:65%;
+	text-align: center;
+}
+.ctacard p{
+	text-align:left;
+	margin:2em 0em 2em 0em;
+}
+
+/*-----Footer styles-----*/
+.footercontainer{
+	background:#2c2f33;
+	color:white;
+	overflow: hidden;
+	padding:1em 2em 0 2em;
+	text-align: center;
+}
+
+/*-----Responsive styles-----*/
+@media only screen and (max-width: 1000px){
+
+	.navcontainer,
+	.maincontainer,
+	.backgroundcontainer,
+	.bodycontainer,
+	.contents{
+		display:flex;
+		flex-direction: column;
+	  	flex-wrap: wrap;
+	  	align-content: center;
+	  	padding:0;
+	}
+
+	.contents{
+		padding: 2em;
+	}
+	.form{
+		width: 70%;
+		padding-bottom: 3vw;
+	}
+	.textcontainer{
+		display:flex;
+		justify-content: center;
+		width:100%;
+		font-size:2vw;
+		text-align: center;
+		padding: 10em 1em 10em 1em;
+		margin: 10em 0em 10em 0em;;
+	}
+	.textcontents{
+		width: 70%;
+		text-shadow: 1em;
+	}
+
+	.formcontainer{
+		display:flex;
+		flex-direction: column;
+	  	flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.cardscontainer{
+		display:flex;
+		flex-direction: column;
+	  	flex-wrap: wrap;
+	  	align-content: center;
+	  	padding:1em;
+	  	width:100%;
+	}
+
+	.optionscontainer{
+		height:auto;
+	}
+	.optionscontainer{
+		padding:1em 0 1em 0;
+		width: auto;
+
+	}
+
+	.cardoptions{
+		width: 50%;
+		margin:2em;
+		font-size:4vw;
+	}
+
+	.textcontainer a,
+	.cardoptions a{
+		font-size: 4vw;
+	}
+
+	.ctacard{
+		width: 100%;
+		text-align:left;
+		padding:4em 3em 4em 3em;
+	}
+	.footercontainer{
+		padding:.5em;
+		font-size: 4vw;
+
+	}
+}
